@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    /* ### Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+header, main, footer {
+    margin: 120px auto;
+    padding: 0 31px;
+    text-align: center;
+}
+/* ?--------------HEADER-------------- */
+header {
+    margin: 0 auto;
+    padding: 0 31px;
+    text-align: center;
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header img {
+    margin-top: 120px;
+}
+header h1 {
+    margin-top: 60px;
+    font-size: 3.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+header p, main p {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: var(--Grayish-Blue);
+}
+header .buttons {
+    display: flex;
+    flex-direction: column;
+}
+header button, .main-buttons button {
+    width: 100%;
+    height: 58px;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.7rem;
+    border: none;
+}
+.buttons .ios-button {
+    margin-top: 48px;
+    background-color: var(--Strong-Cyan);
+}
+.buttons .mac-button {
+    margin-top: 20px;
+    background-color: var(--Light-Blue);
+}
+/* ?--------------MAIN-------------- */
+
+/* ?-----------SECTION1----------- */
+.track-section h2 {
+    color: var(--Dark-Grayish-Blue);
+}
+.track-section h3 {
+    margin-top: 40px;
+    color: var(--Dark-Grayish-Blue);
+}
+.track-section img {
+    width: 100%;
+    margin: 68px 0 20px 0;
+}
+
+/* ?-----------SECTION2----------- */
+.access-section {
+    margin-top: 180px;
+}
+.access-section h4,
+.supercharge h4,
+.clipboard h4 {
+    font-size: 2.7rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.access-section img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+/* ?-----------SECTION3----------- */
+
+/* ?--------part1-------- */
+.supercharge {
+    margin-top: 100px;
+}
+.supercharge-img1 {
+    margin-top: 85px;
+}
+.supercharge h5 {
+    margin-top: 36px;
+    font-size: 2.3rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.supercharge-imgs {
+    margin-top: 70px;
+}
+
+/* ?--------part2-------- */
+.supercharge-part2 {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.supercharge-part2 img {
+    margin-top: 60px;
+}
+
+/* ?-----------SECTION4----------- */
+.clipboard {
+    margin-top: 165px;
+}
+.main_ios-button {
+    margin-top: 48px;
+    background-color: var(--Strong-Cyan);
+}
+.main_mac-button {
+    margin-top: 20px;
+    background-color: var(--Light-Blue);
+}
+
+/* ?--------------FOOTER-------------- */
+footer {
+    margin: 160px 0 0 0;
+    background-color: hsl(201, 11%, 96%);
+}
+footer .logo {
+    width: 65px;
+    margin: 50px 0 0 0;
+}
+ul li {
+    margin-top: 34px;
+    line-height: 24px;
+    color: var(--Dark-Grayish-Blue);
+    list-style: none;
+}
+.social-networks {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.social-networks img {
+    margin: 0 18px;
+}
+
+/* !--------------MEDIA QUERIES-------------- */
+/* !------------860px------------ */
+@media screen and (min-width: 890px) {
+
+    /* ?----------SECTION1---------- */
+    header {
+        background-image: url(/images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header h1 {
+        font-size: 4.4rem;
+    }
+    header p {
+        max-width: 680px;
+        margin: 15px auto;
+        font-size: 2rem;
+    }
+    header .buttons,
+    .clipboard .main-buttons{
+        margin: 30px auto;
+        max-width: 500px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .buttons button,
+    .main-buttons button {
+        max-width: 230px;
+    }
+    .buttons .ios-button,
+    .buttons .mac-button,
+    .main-buttons .main_ios-button,
+    .main-buttons .main_mac-button{
+        margin: 0 auto;
+    }
+
+    /* ?----------SECTION2---------- */
+    .track-section h2,
+    .access-section h4,
+    .supercharge-part1 h4,
+    .clipboard h4 {
+        font-size: 3.7rem;
+    }
+    .paragraph {
+        font-size: 1.9rem;
+    }
+    main .track-section p {
+        margin: 25px auto;
+        max-width: 730px;
+    }
+    .track-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .track-flex .textos {
+        padding: 80px;
+        text-align: start;
+    }
+    .track-flex img {
+        margin-left: -60px;
+        max-width: 900px;
+    }
+
+    /* ?----------SECTION3---------- */
+    main .access-section .paragraph {
+        margin: 25px auto;
+        max-width: 730px;
+    }
+    .access-section img {
+        max-width: 900px;
+    }
+    .supercharge-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .supercharge-flex .blacklist {
+        max-width: 500px;
+    }
+    .supercharge-flex div {
+        margin: 0 30px;
+    }
+    .supercharge-part2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* ?----------SECTION4---------- */
+    .clipboard p {
+        max-width: 710px;
+        margin: 25px auto;
+    }
+    .b-cyan {
+        box-shadow: 0 4px hsl(171, 66%, 38%);
+    }
+    .b-blue {
+        box-shadow: 0 4px hsl(233, 100%, 64%);
+    }
+
+    /* ?----------FOOTER---------- */
+    footer {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    footer .logo {
+        margin: 50px 0 0 100px;
+    }
+    footer ul {
+        display: flex;
+    }
+    footer ul li {
+        margin: 60px 40px;
+    }
+    .list-container {
+        grid-column: 2 / 5;
+    }
+    .social-networks {
+        grid-column: 5 / 7;
+        margin: 60px;
+    }
+}
+
+/* .attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
